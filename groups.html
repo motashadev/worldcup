@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المباريات حسب المجموعات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🏆 ترتيب المجموعات</h1>
+            <a href="index.html" class="back-link">العودة للرئيسية</a>
+        </header>
+        
+        <div class="groups-container">
+            
+            <div class="group-section">
+                <div class="group-title" onclick="toggleGroup(this)">
+                    المجموعة A <span class="arrow">▼</span>
+                </div>
+                <div class="matches-grid">
+                    <div class="match-card">
+                        <div class="match-header">
+                            <span class="match-time">⏱️ 10:00 م</span>
+                            <span class="match-date">📅 11 يونيو 2026</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/mx.png" alt="المكسيك" class="team-flag-img">
+                                <span>المكسيك</span>
+                            </div>
+                            <div class="score-box">- : -</div>
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/za.png" alt="جنوب إفريقيا" class="team-flag-img">
+                                <span>جنوب إفريقيا</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-section">
+                <div class="group-title" onclick="toggleGroup(this)">
+                    المجموعة B <span class="arrow">▼</span>
+                </div>
+                <div class="matches-grid">
+                    <div class="match-card">
+                        <div class="match-header">
+                            <span class="match-time">⏱️ 10:00 م</span>
+                            <span class="match-date">📅 12 يونيو 2026</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/ca.png" alt="كندا" class="team-flag-img">
+                                <span>كندا</span>
+                            </div>
+                            <div class="score-box">- : -</div>
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/ba.png" alt="البوسنة والهرسك" class="team-flag-img">
+                                <span>البوسنة والهرسك</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-section">
+                <div class="group-title" onclick="toggleGroup(this)">
+                    المجموعة C <span class="arrow">▼</span>
+                </div>
+                <div class="matches-grid">
+                    <div class="match-card">
+                        <div class="match-header">
+                            <span class="match-time">⏱️ 01:00 ص</span>
+                            <span class="match-date">📅 14 يونيو 2026</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/br.png" alt="البرازيل" class="team-flag-img">
+                                <span>البرازيل</span>
+                            </div>
+                            <div class="score-box">- : -</div>
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/ma.png" alt="المغرب" class="team-flag-img">
+                                <span>المغرب</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-section">
+                <div class="group-title" onclick="toggleGroup(this)">
+                    المجموعة D <span class="arrow">▼</span>
+                </div>
+                <div class="matches-grid">
+                    <div class="match-card">
+                        <div class="match-header">
+                            <span class="match-time">⏱️ 04:00 ص</span>
+                            <span class="match-date">📅 13 يونيو 2026</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/us.png" alt="أمريكا" class="team-flag-img">
+                                <span>أمريكا</span>
+                            </div>
+                            <div class="score-box">- : -</div>
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/py.png" alt="باراغواي" class="team-flag-img">
+                                <span>باراغواي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-section">
+                <div class="group-title" onclick="toggleGroup(this)">
+                    المجموعة H <span class="arrow">▼</span>
+                </div>
+                <div class="matches-grid">
+                    <div class="match-card">
+                        <div class="match-header">
+                            <span class="match-time">⏱️ 07:00 م</span>
+                            <span class="match-date">📅 15 يونيو 2026</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/es.png" alt="إسبانيا" class="team-flag-img">
+                                <span>إسبانيا</span>
+                            </div>
+                            <div class="score-box">- : -</div>
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/cv.png" alt="الرأس الأخضر" class="team-flag-img">
+                                <span>الرأس الأخضر</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-card" style="margin-top: 25px;">
+                        <div class="match-header">
+                            <span class="match-time">⏱️ 01:00 ص</span>
+                            <span class="match-date">📅 16 يونيو 2026</span>
+                        </div>
+                        <div class="match-body">
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/sa.png" alt="السعودية" class="team-flag-img">
+                                <span>السعودية</span>
+                            </div>
+                            <div class="score-box">- : -</div>
+                            <div class="team">
+                                <img src="https://flagcdn.com/w80/uy.png" alt="أوروغواي" class="team-flag-img">
+                                <span>أوروغواي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleGroup(element) {
+            const matchesGrid = element.nextElementSibling;
+            const arrow = element.querySelector('.arrow');
+            if (matchesGrid.style.display === "none") {
+                matchesGrid.style.display = "grid";
+                arrow.textContent = "▼";
+            } else {
+                matchesGrid.style.display = "none";
+                arrow.textContent = "◀";
+            }
+        }
+    </script>
+</body>
+</html>
