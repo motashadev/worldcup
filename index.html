@@ -21,7 +21,7 @@
         .main-menu {
             text-align: center;
             background: rgba(255, 255, 255, 0.1);
-            padding: 50px 40px;
+            padding: 40px 30px;
             border-radius: 24px;
             backdrop-filter: blur(10px);
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
@@ -32,29 +32,29 @@
         }
 
         h1 {
-            font-size: 38px;
-            margin-bottom: 10px;
+            font-size: 34px;
+            margin-bottom: 5px;
             color: #fff;
             text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         p {
-            font-size: 16px;
+            font-size: 15px;
             color: #f0d5dc;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .menu-links {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
         }
 
         .menu-card {
             background: rgba(255, 255, 255, 0.95);
             color: #8a1538;
-            padding: 18px 25px;
-            font-size: 18px;
+            padding: 15px 20px;
+            font-size: 16px;
             font-weight: bold;
             border-radius: 15px;
             text-decoration: none;
@@ -64,7 +64,20 @@
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
-
+        .menu-card-disabled {
+            background: rgba(109, 109, 109, 0.95);
+            color: #8a1538;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 15px;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
         .menu-card:hover {
             transform: translateY(-4px);
             background: #8a1538;
@@ -73,7 +86,7 @@
         }
 
         .icon {
-            font-size: 22px;
+            font-size: 20px;
         }
 
         @keyframes fadeIn {
@@ -85,7 +98,7 @@
 <body>
 
     <div class="main-menu">
-        <h1>🏆 صافرة 2026</h1>
+        <h1>🏆 مونديال 2026</h1>
         <p>كل المباريات بمكان واحد</p>
 
         <div class="menu-links">
@@ -95,6 +108,14 @@
             
             <a href="time.html" class="menu-card">
                 <span>📅 الترتيب حسب الوقت والتاريخ</span>
+            </a>
+
+            <a href="arabs.html" class="menu-card">
+                <span>⭐ مباريات المنتخبات العربية</span>
+            </a>
+
+            <a href="#" class="menu-card-disabled">
+                <span>✅ المباريات المنتهية</span>
             </a>
         </div>
     </div>
