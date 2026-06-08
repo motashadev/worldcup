@@ -29,6 +29,7 @@
             max-width: 500px;
             width: 90%;
             animation: fadeIn 1s ease-in-out;
+            position: relative;
         }
 
         h1 {
@@ -38,7 +39,7 @@
             text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        p {
+        .sub-title {
             font-size: 15px;
             color: #f0d5dc;
             margin-bottom: 30px;
@@ -48,6 +49,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            margin-bottom: 30px;
         }
 
         .menu-card {
@@ -64,20 +66,7 @@
             transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
-        .menu-card-disabled {
-            background: rgba(109, 109, 109, 0.95);
-            color: #8a1538;
-            padding: 15px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 15px;
-            text-decoration: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        }
+
         .menu-card:hover {
             transform: translateY(-4px);
             background: #8a1538;
@@ -87,6 +76,19 @@
 
         .icon {
             font-size: 20px;
+        }
+
+        .main-footer {
+            font-size: 11px;
+            color: #f0d5dc;
+            opacity: 0.7;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+            margin-top: 20px;
+        }
+
+        .main-footer p {
+            margin: 3px 0;
         }
 
         @keyframes fadeIn {
@@ -99,7 +101,7 @@
 
     <div class="main-menu">
         <h1>🏆 مونديال 2026</h1>
-        <p>كل المباريات بمكان واحد</p>
+        <div class="sub-title">كل المباريات بمكان واحد</div>
 
         <div class="menu-links">
             <a href="groups.html" class="menu-card">
@@ -114,9 +116,14 @@
                 <span>⭐ مباريات المنتخبات العربية</span>
             </a>
 
-            <a href="#" class="menu-card-disabled">
+            <a href="#" class="menu-card" style="pointer-events: none; opacity: 0.5; cursor: not-allowed; background: #666; color: #fff;">
                 <span>✅ المباريات المنتهية</span>
             </a>
+        </div>
+
+        <div class="main-footer">
+            <p>© 2026 جميع الحقوق محفوظة | موقع صافرة 2026</p>
+            <p>تم التطوير بواسطة محمد طه العريقي ⚽</p>
         </div>
     </div>
 
