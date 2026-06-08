@@ -18,9 +18,9 @@
             
             <div class="group-section">
                 <div class="group-title" onclick="toggleGroup(this)">
-                    المجموعة A <span class="arrow">▼</span>
+                    المجموعة A <span class="arrow">◀</span>
                 </div>
-                <div class="matches-grid">
+                <div class="matches-grid" style="display: none;">
                     <div class="match-card">
                         <div class="match-header">
                             <span class="match-time">⏱️ 10:00 م</span>
@@ -43,9 +43,9 @@
 
             <div class="group-section">
                 <div class="group-title" onclick="toggleGroup(this)">
-                    المجموعة B <span class="arrow">▼</span>
+                    المجموعة B <span class="arrow">◀</span>
                 </div>
-                <div class="matches-grid">
+                <div class="matches-grid" style="display: none;">
                     <div class="match-card">
                         <div class="match-header">
                             <span class="match-time">⏱️ 10:00 م</span>
@@ -68,9 +68,9 @@
 
             <div class="group-section">
                 <div class="group-title" onclick="toggleGroup(this)">
-                    المجموعة C <span class="arrow">▼</span>
+                    المجموعة C <span class="arrow">◀</span>
                 </div>
-                <div class="matches-grid">
+                <div class="matches-grid" style="display: none;">
                     <div class="match-card">
                         <div class="match-header">
                             <span class="match-time">⏱️ 01:00 ص</span>
@@ -93,9 +93,9 @@
 
             <div class="group-section">
                 <div class="group-title" onclick="toggleGroup(this)">
-                    المجموعة D <span class="arrow">▼</span>
+                    المجموعة D <span class="arrow">◀</span>
                 </div>
-                <div class="matches-grid">
+                <div class="matches-grid" style="display: none;">
                     <div class="match-card">
                         <div class="match-header">
                             <span class="match-time">⏱️ 04:00 ص</span>
@@ -118,9 +118,9 @@
 
             <div class="group-section">
                 <div class="group-title" onclick="toggleGroup(this)">
-                    المجموعة H <span class="arrow">▼</span>
+                    المجموعة H <span class="arrow">◀</span>
                 </div>
-                <div class="matches-grid">
+                <div class="matches-grid" style="display: none;">
                     <div class="match-card">
                         <div class="match-header">
                             <span class="match-time">⏱️ 07:00 م</span>
@@ -161,11 +161,18 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 جميع الحقوق محفوظة | موقع صافرة 2026</p>
+            <p>تم التطوير بواسطة محمد طه العريقي ⚽</p>
+        </div>
+    </footer>
+
     <script>
         function toggleGroup(element) {
             const matchesGrid = element.nextElementSibling;
             const arrow = element.querySelector('.arrow');
-            if (matchesGrid.style.display === "none") {
+            if (matchesGrid.style.display === "" || matchesGrid.style.display === "none") {
                 matchesGrid.style.display = "grid";
                 arrow.textContent = "▼";
             } else {
